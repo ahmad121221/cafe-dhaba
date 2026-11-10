@@ -1,0 +1,23 @@
+CL1000 Lab 12 – Final Submission
+
+Student Name: Ahmad Shahzad
+Roll Number: 26i-3095
+Section: B
+
+Project Name: Chai Dhaba Website
+
+
+Live Website Link:
+https://ahmad121221.github.io/cafe-dhaba/
+
+Project Pages:
+1. Home
+2. Menu
+3. Gallery
+4. Contact
+
+Technologies Used:
+HTML, CSS, JavaScript, Git, GitHub, GitHub Pages
+
+AI Tool Used:
+ChatGPT
