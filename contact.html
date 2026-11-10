@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Chai Dhaba</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .contact-section {
+            max-width: 750px;
+            margin: 30px auto;
+            padding: 25px;
+            background-color: #FFF8EB;
+            border-radius: 10px;
+        }
+
+        .contact-section h2 {
+            text-align: center;
+            color: #432719;
+        }
+
+        .contact-section p {
+            text-align: center;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 25px;
+        }
+
+        .contact-form label {
+            font-weight: bold;
+            color: #3B2418;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 12px;
+            border: 1px solid #B77A28;
+            border-radius: 5px;
+            font-family: Georgia, serif;
+            font-size: 16px;
+        }
+
+        .contact-form textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .contact-form button {
+            padding: 12px;
+            background-color: #B77A28;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: Georgia, serif;
+            font-size: 16px;
+        }
+
+        .contact-form button:hover {
+            background-color: #432719;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Chai Dhaba</h1>
+        <p>Your Perfect Place for Chai and Snacks</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+        <section class="contact-section">
+
+            <h2>Contact Us</h2>
+
+            <p>
+                Have a question or suggestion?
+                We would love to hear from you!
+            </p>
+
+            <form class="contact-form" onsubmit="sendMessage(event)">
+
+                <label for="name">Your Name:</label>
+                <input type="text" id="name"
+                       placeholder="Enter your name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email"
+                       placeholder="Enter your email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message"
+                          placeholder="Write your message here..."
+                          required></textarea>
+
+                <button type="submit">Send Message</button>
+
+            </form>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Chai Dhaba. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function sendMessage(event) {
+            event.preventDefault();
+
+            let name = document.getElementById("name").value;
+
+            window.alert("Thank you, " + name +
+                         "! Your message has been received.");
+        }
+    </script>
+
+</body>
+</html>
